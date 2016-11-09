@@ -2,6 +2,11 @@
 
 this code is to extract server related configuration information from the config.xml of weblogic. 
 
+<server> 
+.....
+.....
+
+</server>
 
 # what versions of weblogic does it work ?
 
