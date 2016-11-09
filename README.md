@@ -12,7 +12,7 @@ this code is to extract server related configuration information from the config
 
 # what versions of weblogic does it work ?
 
-Tested with 9 and 10 and works
+Tested with 9 and 10.3 (11g). should also work in 12c
 
 # how to execute it.
 
