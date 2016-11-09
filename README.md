@@ -23,3 +23,11 @@ Execute the script with two startup arguments.
 
 `` ./config_xml_extractor.py config.xml `hostname` ``
 
+
+# Environment
+
+Unix
+
+# Features
+
+It can test the Console availability using CURL command and print the availability status.
