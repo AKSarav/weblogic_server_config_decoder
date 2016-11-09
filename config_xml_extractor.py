@@ -59,15 +59,7 @@ class server(object):
         def addelement(self,key,value):
                 self.__dict__[key]=value
 
-'''
-Below steps are for creating Dynamic variables and dictionary
 
-element[server]=parent() # New object will be created under the list
-
-element[server].addelement(key,value) would add new element to the dictionary like JSON
-
-
-'''
 mode="parent"
 print "------------------------------------------------------------"
 try:
