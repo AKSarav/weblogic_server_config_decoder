@@ -13,12 +13,11 @@ repo = {}
 parents = []
 servername = ""
 # Testing the Startup Arguments for the script
-if not (len(argv) > 2 ):
+if not (len(argv) > 1 ):
         print "Argument is must"
         sys.exit()
 
 filename = argv[1].rstrip();
-hostname = argv[2].strip();
 
 if exists(filename):
         #with open(filename,"r+") as fo
@@ -58,7 +57,6 @@ servers=[]
 class server(object):
         def addelement(self,key,value):
                 self.__dict__[key]=value
-
 
 mode="parent"
 print "------------------------------------------------------------"
@@ -144,21 +142,6 @@ try:
 except IndexError:
         print "- "
 
-for entry in servers:
-        if "Admin" in entry['server_name']:
-                print entry['server_name']+":"+entry['server_listen-port']
-                print "http://"+hostname+":"+entry['server_listen-port']+"/console"
-                url="http://"+hostname+":"+entry['server_listen-port']+"/console"
-                command="curl "+url
-                os.system(command)
-
-        else:
-                print entry['server_name']+":"+entry['server_listen-port']
-                print "http://"+entry['server_machine']+":"+entry['server_listen-port']
 print "----------------------------------------------------------"
 '''
-for parent in elements.keys():
-        print '{"'+parent+'":['
-        print '\t',elements[parent].__dict__
-        print ']}'
-'''
+
