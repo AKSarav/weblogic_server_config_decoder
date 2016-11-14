@@ -16,18 +16,14 @@ Tested with 9 and 10.3 (11g). should also work in 12c
 
 # how to execute it.
 
-Execute the script with two startup arguments.
+Execute the script with the config filename that has to be parsed.
 
-1) Fully qualified location of your config.xml file
-2) Hostname where this domain is running (In cases where there is not hostname mentioned within the config.xml. Provided hostname would be considered)
-
-`` ./config_xml_extractor.py config.xml `hostname` ``
-
+`` ./config_xml_extractor.py config.xml ``
 
 # Environment
 
 Unix
 
-# Features
 
-It can test the Console availability using CURL command and print the availability status.
+
+
